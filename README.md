@@ -9,7 +9,7 @@
 在[Htallone/myCV](https://github.com/billryan/resume)的基础上进行了微小的修改
 
 ## 模板
-<img src="myCV-Photo.png" width = "70%" height = "70%" div align=center />
+<div align=center><img src="myCV-Photo.png" width="70%" height="70%" /></div>
 
 
 ## 说明
