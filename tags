@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968ef/
+License	README.md	/^# License$/;"	c
+\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faCogs}\\ IT 技能	myCV-Photo.tex	/^\\section{\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faCogs}\\ IT 技能}$/;"	s
+\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faGraduationCap}\\ 教育背景	myCV-Photo.tex	/^\\section{\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faGraduationCap}\\  教育/;"	s
+\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faInfo}\\ 其他	myCV-Photo.tex	/^\\section{\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faInfo}\\ 其他}$/;"	s
+\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faList}\\ 获奖情况	myCV-Photo.tex	/^\\section{\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faList}\\ 获奖情况}$/;"	s
+\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faUsers}\\ 项目经历	myCV-Photo.tex	/^\\section{\\makebox[\\widthof{\\faGraduationCap}][c]{\\color{CVBlue}\\faUsers}\\ 项目经历}$/;"	s
+clean	Makefile	/^clean:$/;"	t
+myCV-Photo	Makefile	/^myCV-Photo:$/;"	t
+参考：	README.md	/^## 参考：$/;"	s
+基于Latex的简历模板	README.md	/^# 基于Latex的简历模板$/;"	c
+字体	README.md	/^### 字体$/;"	S
+模板	README.md	/^## 模板$/;"	s
+编译	README.md	/^### 编译$/;"	S
+说明	README.md	/^## 说明$/;"	s

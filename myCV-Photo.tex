@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+
+
+\setlength{\parindent}{0pt}
+\usepackage{xltxtra}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{url}
+\urlstyle{tt}
+\usepackage{xcolor}
+\definecolor{CVBlue}{RGB}{23,110,191}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\CJKsetecglue{} %% 取消中文与数字之间间隙
+
+
+%% Main document font
+\setmainfont[
+	Path = fonts/Main/,
+	Extension = .otf ,
+	BoldFont = texgyretermes-bold.otf, %加粗字体
+]{texgyretermes-regular.otf} %正常字体
+
+% 中文字体设置
+\setCJKmainfont[
+	Path = fonts/hansans/,
+	Extension = .otf,
+	BoldFont=SourceHanSansCN-Bold.otf, %加粗字体
+]{SourceHanSansCN-Regular.otf} %正常字体
+
+
+\usepackage{relsize}
+\usepackage{xspace}
+
+% use fontawesome
+\usepackage{fontawesome} %一些图标
+
+% a4纸，上下左右边距
+\usepackage[
+	a4paper,
+	left=1.2cm,
+	right=1.2cm,
+	top=1.5cm,
+	bottom=1cm,
+	nohead
+]{geometry}
+
+\renewcommand{\baselinestretch}{1.5} %定义行间距1.5
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\setlist{noitemsep} % removes spacing from items but leaves space around the whole list
+%\setlist{nosep} % removes all vertical spacing within and around the list
+\setlist[itemize]{topsep=0.25em, leftmargin=*}
+\setlist[enumerate]{topsep=0.25em, leftmargin=*}
+
+
+
+\titleformat{\section}         % Customise the \section command 
+{\large\bfseries\raggedright} % Make the \section headers large (\Large),
+% small capitals (\scshape) and left aligned (\raggedright)
+{}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+{}                           % Can be used to insert code before the heading
+[{\color{CVBlue}\titlerule}]                 % Inserts a horizontal line after the heading
+\titlespacing*{\section}{0cm}{*1.6}{*1.2}
+
+
+
+\begin{document}
+\pagenumbering{gobble}
+	
+%%%% 利用tikz来定位照片
+\begin{tikzpicture}[remember picture, overlay] 
+	\node[anchor = north east] at ($(current page.north east)+(-1cm,-1.2cm)$) {\includegraphics[height=2.5cm]{avatar}};
+\end{tikzpicture}%
+
+\centerline{\LARGE\bfseries{王大锤}}
+
+\centerline{\normalsize{\faPhone\ 123-4567-8910 \quad \faEnvelopeO\ \href{mailto:123456789@qq.com}{123456789@qq.com}}}
+
+\centerline{\normalsize{\faGithub\ https://github/Username \quad \faRssSquare \ http://yourBlogURL}}
+	
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\  教育背景}	
+\textbf{麻省理工学院} \hfill 2000.9 -- \makebox[\widthof{2000.9}][s]{2004.7}
+
+连网线 \quad 本科
+\begin{itemize}
+	\item 相关课程：吃、喝、玩、乐
+\end{itemize}
+
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faUsers}\ 项目经历}
+\textbf{“流浪地球”计划} \hfill 2012.1
+
+项目组长 \quad 负责行星发动机核心代码编写
+\begin{itemize}
+	\item 联合政府为使地球脱离太阳系，前往比邻星而开发的巨型机械设施，共有11000台，其中有10000台行星发动机安装在北半球的亚欧大陆和美洲大陆上。
+	\item 另外赤道上还有2000台转向发动机。人类在北半球的亚欧大陆、美洲大陆和赤道上集中建造了无数庞大的行星发动机。行星发动机通过重聚变技术，来达到推动地球的目的。
+	\item 北京第三交通局提醒您，道路千万条，安全第一条，行车不规范，亲人两行泪。
+\end{itemize}
+	
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
+\begin{itemize}
+	\item 吃饭第一名 \hfill 2000.12
+	
+	\item 睡觉第一名 \hfill 2000.12
+
+	\item 发呆第一名 \hfill 2000.12
+
+	\item 喝水第一名 \hfill 2000.12
+
+	\item 玩手机第一名 \hfill 2000.12
+
+	\item 消费第一名 \hfill 2000.12
+\end{itemize}
+
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faCogs}\ IT 技能}
+
+\begin{itemize}
+	\item 精通各种BUG的编写
+	\item 7天从入门到精通C++
+	\item 熟练掌握各种品牌电脑的开机、关机、重启
+	\item rm -rf
+	\item 刷爆所有OJ题库
+\end{itemize}
+	
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faInfo}\ 其他}
+
+\begin{itemize}[parsep=0.5ex]
+	\item 技术博客: http://yourBlogURL
+	\item GitHub: https://github.com/Username
+	\item 语言: 英语六级
+\end{itemize}
+	
+%%%% 如果多页简历，可以手动在适当位置插入 \newpage 或者 \clearpage 开始新一页
+	
+\end{document}
